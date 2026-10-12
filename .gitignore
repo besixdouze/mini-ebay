@@ -1,0 +1,33 @@
+# Tomcat itself (never commit the server)
+apache-tomcat*/
+logs/
+work/
+temp/
+
+# Compiled output and libraries (list them in the README instead)
+*.class
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+*.apk
+*.aab
+
+# Course reports, database dumps and backups (contain names, student IDs, password hashes)
+*.pdf
+*.docx
+*_backup.sql
+
+# Downloaded product images (not yours to redistribute); keep a placeholder instead
+webapp/project1/images/*
+!webapp/project1/images/placeholder.png
+
+# OS files
+Thumbs.db
+.DS_Store

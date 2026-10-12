@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:background="#EEEEEE"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seller:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textStartingBid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starting Bid:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textCurrentBid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Bid:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Due Date:"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Bid: $"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editBidAmount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="0.00" />
+
+            <Button
+                android:id="@+id/buttonPlaceBid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Bid"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textBidHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bid History:"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

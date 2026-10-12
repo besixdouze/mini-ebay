@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Mini-ebay Auction System</display-name>
+    <description>Mini-ebay Web and Mobile Application</description>
+
+    <!-- Authentication Dummy Servlet for Mobile Login -->
+    <servlet>
+        <servlet-name>authenticateApplicationDummy</servlet-name>
+        <servlet-class>authenticateApplicationDummy</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authenticateApplicationDummy</servlet-name>
+        <url-pattern>/project1/authenticateApplicationDummy</url-pattern>
+    </servlet-mapping>
+
+    <!-- Authentication Servlet for Mobile Login -->
+    <servlet>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <url-pattern>/project1/authenticateApplication</url-pattern>
+    </servlet-mapping>
+
+    <!-- Product List Servlet for Mobile -->
+    <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>ProductListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductListServlet</servlet-name>
+        <url-pattern>/project1/getProducts</url-pattern>
+    </servlet-mapping>
+
+    <!-- Product Search Servlet for Mobile -->
+    <servlet>
+        <servlet-name>ProductSearchServlet</servlet-name>
+        <servlet-class>ProductSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductSearchServlet</servlet-name>
+        <url-pattern>/project1/searchProducts</url-pattern>
+    </servlet-mapping>
+
+    <!-- Product Detail Servlet for Mobile -->
+    <servlet>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <servlet-class>ProductDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <url-pattern>/project1/getProductDetail</url-pattern>
+    </servlet-mapping>
+
+    <!-- Place Bid Servlet for Mobile -->
+    <servlet>
+        <servlet-name>PlaceBidServlet</servlet-name>
+        <servlet-class>PlaceBidServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlaceBidServlet</servlet-name>
+        <url-pattern>/project1/placeBid</url-pattern>
+    </servlet-mapping>
+
+    <!-- Department List Servlet for Mobile -->
+    <servlet>
+        <servlet-name>DepartmentListServlet</servlet-name>
+        <servlet-class>DepartmentListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DepartmentListServlet</servlet-name>
+        <url-pattern>/project1/getDepartments</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>project1/loginHashing.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
