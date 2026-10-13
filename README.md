@@ -69,4 +69,5 @@ Open `android-app/` in Android Studio, the server address is the `hostAddress` f
 | ![Admin](screenshots/05-admin-dashboard.png) | ![Users](screenshots/06-manage-users.png) |
 
 ## Credits
-Co-authored-by: Diego Rodríguez Piñeiro <122119139+DiP76-bit@users.noreply.github.com>
+Co-authored-by: Diego Rodríguez Piñeiro <drodz.pineiro@gmail.com>
+
