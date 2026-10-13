@@ -1,10 +1,8 @@
 # Mini eBay (Web + Android)
 
-> University course project (CPEN 410, Mobile, Web and Internet Programming, UAGM, Fall 2025).
+> University course project (CPEN 410, Mobile, Web and Internet Programming, UAGM, Fall 2025). Team of 2 students.
 > The assignment asked for plain HTML/JSP pages with no CSS, so the focus is the backend:
 > Java servlets/JSP, MySQL, role-based access control, hashed credentials, and an Android client.
-
-Auction platform built for **Mobile, Web and Internet Programming (CPEN 410)** at Universidad Ana G. Méndez. Team of 2
 
 Users can browse and search products by department, view bid history, place bids, and list items for sale. Admins manage users, departments, and products. A companion Android app uses the same backend (login, search, product detail, place bid).
 
